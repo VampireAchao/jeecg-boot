@@ -7,7 +7,7 @@ package org.jeecg.common.config.mqtoken;
  */
 public class UserTokenContext {
 
-    private static ThreadLocal<String> userToken = new ThreadLocal<String>();
+    private static ThreadLocal<String> userToken = new InheritableThreadLocal<String>();
 
     public UserTokenContext() {
     }
